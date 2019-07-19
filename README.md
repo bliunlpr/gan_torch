@@ -29,7 +29,6 @@ After RBM pre-training, the model is trained by minimizing the cross-entropy los
 
 ```
 python3 main_baseline.py --train_scp Your train directory --val_scp Your val directory --eval_scp  Your test directory 
-
 ```
 
 ### Deep Adversarial Training
@@ -44,7 +43,6 @@ python3 main.py --train_scp Your train directory --val_scp Your val directory --
 We use the Kaldi WFST decoder for decoding in all the experiments.
 ```
 sh kaldi/decode.sh  
-
 ```
 
 # Results
