@@ -5,7 +5,7 @@ on Python 3, PyTorch. We propose an adversarial training method to directly boos
 optimization of generator, discriminator and AM concentrates the strengths of both GAN and AM for speech recognition. 
 
 # Requirements
-Python 3.5, PyTorch 0.4.0.
+kaldi, Python 3.5, PyTorch 0.4.0.
 
 # Data
 ### Chime 4
@@ -40,5 +40,11 @@ sh run.sh --stage 2 --seq_training false --model_type cnn
 sh run.sh --stage 2 --seq_training false --model_type lstm --train_type  base_attention | last_state | base_attention ```   
 ## CNN does not use attention but avgpool.
 sh run.sh --stage 2 --seq_training false --model_type cnn 
+```
+
+# Decoding
+```
+sh kaldi/decode.sh  ```   
+
 ```
 
