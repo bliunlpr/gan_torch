@@ -7,6 +7,12 @@ optimization of generator, discriminator and AM concentrates the strengths of bo
 # Requirements
 Python 3.5, PyTorch 0.4.0.
 
+# Data
+## Chime 4
+You can download [Chime 4](http://spandh.dcs.shef.ac.uk/chime_challenge/chime2016/) to run the code.
+
+## Your Own Dataset
+You need build train, dev and test directory. Each has ```feats.scp``` ```utt2spk``` ```spk2utt``` and ```text```. 
 
 <div align="center">
 <img src="https://github.com/bliunlpr/gan_torch/blob/master/fig/adn.jpg"  height="400" width="495">
