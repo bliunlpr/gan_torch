@@ -21,3 +21,24 @@ The model consists of a generator(G), a discriminator (D) and a classifier(C). T
 <div align="center">
 <img src="https://github.com/bliunlpr/gan_torch/blob/master/fig/adn.jpg"  height="400" width="495">
 </div>
+
+
+# Training
+
+### Baseline(cross-entropy loss)
+The baseline system is bulit following the Kaldi chime4/s5 1ch recipe. The acoustic model is a DNN with 7 hidden layers. 
+After RBM pre-training, the model is trained by minimizing the cross-entropy loss.
+
+```
+sh run.sh --stage 2 --seq_training false --model_type lstm --train_type  base_attention | last_state | base_attention ```   
+## CNN does not use attention but avgpool.
+sh run.sh --stage 2 --seq_training false --model_type cnn 
+```
+
+### Deep Adversarial Training
+```
+sh run.sh --stage 2 --seq_training false --model_type lstm --train_type  base_attention | last_state | base_attention ```   
+## CNN does not use attention but avgpool.
+sh run.sh --stage 2 --seq_training false --model_type cnn 
+```
+
