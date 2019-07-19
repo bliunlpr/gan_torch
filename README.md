@@ -43,8 +43,13 @@ sh run.sh --stage 2 --seq_training false --model_type cnn
 ```
 
 # Decoding
+We use the Kaldi WFST decoder for decoding in all the experiments.
 ```
-sh kaldi/decode.sh  ```   
+sh kaldi/decode.sh  
 
 ```
 
+# Results
+<div align="center">
+<img src="https://github.com/bliunlpr/gan_torch/blob/master/fig/result.png"  >
+</div>
