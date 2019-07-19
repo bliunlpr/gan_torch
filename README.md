@@ -8,11 +8,15 @@ optimization of generator, discriminator and AM concentrates the strengths of bo
 Python 3.5, PyTorch 0.4.0.
 
 # Data
-## Chime 4
+### Chime 4
 You can download [Chime 4](http://spandh.dcs.shef.ac.uk/chime_challenge/chime2016/) to run the code.
 
-## Your Own Dataset
+### Your Own Dataset
 You need build train, dev and test directory. Each has ```feats.scp``` ```utt2spk``` ```spk2utt``` and ```text```. 
+
+# Model
+
+The model consists of a generator(G), a discriminator (D) and a classifier(C). The generator G performs the speech enhancement. It transforms the noisy speech signals into the enhanced version. The discriminator D aims to distinguish between the enhanced signals and clean ones. The classifier C classifies senones by features derivated from G. 
 
 <div align="center">
 <img src="https://github.com/bliunlpr/gan_torch/blob/master/fig/adn.jpg"  height="400" width="495">
