@@ -7,3 +7,4 @@ optimization of generator, discriminator and AM concentrates the strengths of bo
 # Requirements
 Python 3.5, PyTorch 0.4.0.
 
+![image](https://github.com/bliunlpr/gan_torch/blob/master/fig/adn.jpg)
