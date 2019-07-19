@@ -36,6 +36,9 @@ sh run.sh --stage 2 --seq_training false --model_type cnn
 ```
 
 ### Deep Adversarial Training
+We alternatively train the parameters of D, G and C to fine-tune the model by the Deep Adversarial Training Algorithm. 
+Three components are implemented with neural networks and the parameters are updated by stochastic gradient descent.
+
 ```
 sh run.sh --stage 2 --seq_training false --model_type lstm --train_type  base_attention | last_state | base_attention ```   
 ## CNN does not use attention but avgpool.
