@@ -8,4 +8,6 @@ optimization of generator, discriminator and AM concentrates the strengths of bo
 Python 3.5, PyTorch 0.4.0.
 
 
-<img src="https://github.com/bliunlpr/gan_torch/blob/master/fig/adn.jpg"  height="330" width="495">
+<div align="center">
+<img src="https://github.com/bliunlpr/gan_torch/blob/master/fig/adn.jpg"  height="400" width="495">
+</div>
