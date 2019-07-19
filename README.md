@@ -30,9 +30,8 @@ The baseline system is bulit following the Kaldi chime4/s5 1ch recipe. The acous
 After RBM pre-training, the model is trained by minimizing the cross-entropy loss.
 
 ```
-sh run.sh --stage 2 --seq_training false --model_type lstm --train_type  base_attention | last_state | base_attention ```   
-## CNN does not use attention but avgpool.
-sh run.sh --stage 2 --seq_training false --model_type cnn 
+python3 main_baseline.py --train_scp Your train directory --val_scp Your val directory --eval_scp  Your test directory 
+
 ```
 
 ### Deep Adversarial Training
@@ -40,9 +39,7 @@ We alternatively train the parameters of D, G and C to fine-tune the model by th
 Three components are implemented with neural networks and the parameters are updated by stochastic gradient descent.
 
 ```
-sh run.sh --stage 2 --seq_training false --model_type lstm --train_type  base_attention | last_state | base_attention ```   
-## CNN does not use attention but avgpool.
-sh run.sh --stage 2 --seq_training false --model_type cnn 
+python3 main.py --train_scp Your train directory --val_scp Your val directory --eval_scp  Your test directory 
 ```
 
 # Decoding
